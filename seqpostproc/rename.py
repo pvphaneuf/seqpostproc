@@ -10,7 +10,7 @@ def main():
 
 # TODO: future implementation, search for existence of /output/log.txt
 def _is_breseq_report(file_name):
-    return 'A' in file_name and 'F' in file_name and 'I' in file_name and 'R' in file_name
+    return '_A' in file_name and '_F' in file_name and '_I' in file_name and '_R' in file_name
 
 
 def _get_serialization_str(file_name):
