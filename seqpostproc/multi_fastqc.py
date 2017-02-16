@@ -52,7 +52,7 @@ def _make_summary(fastqs_path):
 def _write_consolidated_results(fastqs_path, output):
     consolidated_results_path = fastqs_path + '/' + "summary.csv"
     with open(consolidated_results_path, 'w', newline='') as consolidated_results:
-        csv_writer = csv.writer(consolidated_results, delimiter=',',)
+        csv_writer = csv.writer(consolidated_results, delimiter=',')
         for row in output:
             csv_writer.writerow(row)
 
